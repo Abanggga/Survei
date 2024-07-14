@@ -1,7 +1,7 @@
 "use strict"
 
 const form = document.querySelector('.form');
-form.addEventListener('submit-button', function(e){
+form.addEventListener('submit', function(e){
     e.preventDefault();
     sendMessage(form);
 })
