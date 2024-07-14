@@ -9,7 +9,7 @@
         $content = "<b>Message form Site:</b>\n".$content;
         $apiToken = "6725841625:AAEvPLKn6lpB0y6bsjaITMdmb1k2yLqwCEo";
         $data = [
-            'chat_id' => '@Onlysend_messagebots',
+            'chat_id' => '-1002208538129',
             'text' => $content,
             'parse_mode' => 'HTML'
         ];
