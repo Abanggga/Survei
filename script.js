@@ -16,7 +16,7 @@ async function sendMessage(form) {
         });
         if (response.ok){
             form.reset();
-            alert('foerm sent!');
+            alert('form sent!');
         }else{
             alert('Error');
         }
