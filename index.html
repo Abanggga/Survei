@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Survei Cinta</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="title" id="title">Survei Cinta</h1>
+            <p class="description title" id="description">
+                Tolong isi survei ini
+            </p>
+        </header>
+        <form action="#" id="survey-form" class="form">
+           <div class="form-group">
+            <label id="name-label" for="name">Nama</label>
+            <input type="text" name="name" id="name" class="form-control" placeholder="Masukkan nama anda" required>
+           </div>
+           <div class="form-group">
+            <label id="email-label" for="email">Email</label>
+            <input type="email" name="email" id="email" class="form-control" placeholder="Masukkan Email anda" required >
+           </div>
+           <div class="form-group">
+            <label id="number-label" for="number">Umur</label>
+            <input type="number" name="age" id="number" min="17" max="30" class="form-control" placeholder="Umur">
+           </div>
+           <div class="form-group">
+            <p>Apa anda sedang dalam hubungan?</p>
+            <label>
+                <input type="radio" name="hubungan" id="iya" value="iya" class="input-radio" checked>
+                Iya
+            </label>
+            <label>
+                <input type="radio" name="hubungan" id="tidak" value="tidak" class="input-radio">
+                Tidak
+            </label>
+           </div>
+           <div class="form-group">
+            <p>Mana yang paling menggambarkan hubungan kalian?</p>
+            <select name="status-hubungan" id="dropdown" class="form-control" required>
+                <option disabled selected value>Pilih opsi</option>
+                <option value="menikah">Menikah</option>
+                <option value="pacaran">Pacaran</option>
+                <option value="fwb">FWB</option>
+                <option value="selingkuhan">Selingkuhan</option>
+            </select>
+           </div>
+           <div class="form-group">
+            <p>
+                Perubahan apa yang anda inginkan dari pasanganan anda?
+                <span class="clue">(Pilih beberapa)</span>
+            </p>
+            <label>
+                <input type="checkbox" name="harapan-pasangan" id="lebih-sabar" value="lebih-sabar" class="input-checkbox">
+                Menjadi lebih sabar
+            </label>
+            <label>
+                <input type="checkbox" name="harapan-pasangan" id="banyak-waktu" value="banyak-waktu" class="input-checkbox">
+                Lebih banyak meluangkan waktu
+            </label>
+            <label>
+                <input type="checkbox" name="harapan-pasangan" id="berhenti-merokok" value="berhenti-merokok">
+                Berhenti Merokok   
+            </label>
+            <label>
+                <input type="checkbox" name="harapan-pasangan" id="berhemat" value="berhemat">
+                Lebih berhemat
+            </label>
+            <label>
+                <input type="checkbox" name="harapan-pasangan" id="sering-ketemu" value="sering-ketemu">
+                Bisa lebih sering ketemu
+            </label>
+           </div>
+           <div class="form-group">
+            <p>Pesan untuk pasangan anda</p>
+            <textarea name="pesan-pasangan" id="pesan-pasangan" class="input-textarea" placeholder="Tulis di sini..."></textarea>
+           </div>
+           <div class="form-group">
+            <button type="submit" id="submit" class="submit-button">Submit</button>
+           </div>  
+        </form>
+    </div>
+</body>
+</html>
