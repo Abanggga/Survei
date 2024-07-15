@@ -105,8 +105,9 @@
                 Pesan untuk pasangan: ${pesanPasangan}
             `;
         
-            const token = '6725841625:AAEvPLKn6lpB0y6bsjaITMdmb1k2yLqwCEo';
-            const chatId = '-1002208538129';
+            const token = 'YOUR_TELEGRAM_BOT_TOKEN'; // Ganti dengan token bot Anda
+            const chatId = 'YOUR_CHAT_ID'; // Ganti dengan chat ID Anda (ID Anda atau ID grup)
+        
             fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
                 method: 'POST',
                 headers: {
@@ -121,7 +122,7 @@
             .then(data => {
                 if (data.ok) {
                     alert('Formulir berhasil dikirim!');
-                    document.getElementById('survey-form').reset();
+                    document.getElementById('survey-form').reset(); // Reset form setelah berhasil
                 } else {
                     alert('Gagal mengirim formulir.');
                 }
@@ -131,7 +132,6 @@
                 alert('Terjadi kesalahan saat mengirim formulir.');
             });
         });
-        </script>
-        
+    </script>      
 </body>
 </html>
