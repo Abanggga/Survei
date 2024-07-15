@@ -120,6 +120,7 @@
             .then(response => response.json())
             .then(data => {
                 if (data.ok) {
+                    form.reset();
                     alert('Formulir berhasil dikirim!');
                 } else {
                     alert('Gagal mengirim formulir.');
